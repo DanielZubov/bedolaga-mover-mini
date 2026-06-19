@@ -105,8 +105,8 @@ cmd_unpack() {
   header
   [ -f "$ARCHIVE" ] || fail "Архив не найден"
   
-  BOT_DIR="/root/bedolaga-telegram-bot"
-  CABINET_DIR="/opt/bedolaga-cabinet"
+  BOT_DIR="/opt/remnawave-bedolaga-telegram-bot"
+  CABINET_DIR="/srv/cabinet"
   
   WORK_DIR=$(mktemp -d)
   tar -xzf "$ARCHIVE" -C "$WORK_DIR"
